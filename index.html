@@ -1,0 +1,247 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/c469f17086.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+      <span class="logo_name">DREADNOUGHT</span>
+    </div>
+    <ul class="nav-links">
+      <li>
+        <a href="#" class="active">
+          <i class='bx bx-grid-alt'></i>
+          <span class="links_name">Dashboard</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-box'></i>
+          <span class="links_name">Workforce</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-list-ul'></i>
+          <span class="links_name">Talents</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-pie-chart-alt-2'></i>
+          <span class="links_name">Perks</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-coin-stack'></i>
+          <span class="links_name">Progress</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
+          <i class='bx bx-user'></i>
+          <span class="links_name">Team</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-message'></i>
+          <span class="links_name">Chats</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
+          <i class='bx bx-cog'></i>
+          <span class="links_name">Setting</span>
+        </a>
+      </li>
+      <li class="log_out">
+        <a href="#">
+          <i class='bx bx-log-out'></i>
+          <span class="links_name">Log out</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <section class="home-section">
+    <nav>
+      <div class="sidebar-button">
+        <i class='bx bx-menu sidebarBtn'></i>
+        <span class="dashboard">Dashboard</span>
+      </div>
+      <div class="search-box">
+        <input type="text" placeholder="Search">
+        <i class='bx bx-search'></i>
+      </div>
+      <div class="profile-details">
+        <!--<img src="images/profile.jpg" alt="">-->
+        <span class="admin_name">John</span>
+      </div>
+    </nav>
+
+    <div class="home-content">
+      <div class="overview-boxes">
+        <!-- <div class="box">
+              <div class="right-side">
+                <div class="box-topic">Applicants</div>
+                <br>
+                <div class="number">1,000</div>
+                <div class="indicator">
+                  <i class='bx bx-up-arrow-alt'></i>
+                </div>
+              </div>
+              <i class='bx bx-cart-alt cart'></i>
+            </div> -->
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic">Applicants</div>
+            <div class="number">2,826</div>
+            <div class="indicator">
+              <i class='bx bx-up-arrow-alt'></i>
+
+              <span class="text">Up from first day</span>
+            </div>
+          </div>
+          <i class="fa-solid fa-browser"></i>
+          <!-- <i class='bx bxs-cart-add cart two' ></i> -->
+        </div>
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic">Teams</div>
+            <div class="number">25</div>
+            <div class="indicator">
+              <i class='bx bx-up-arrow-alt'></i>
+              <span class="text">Up from last month</span>
+            </div>
+          </div>
+          <!-- <i class='bx bxs-cart-add cart two' ></i> -->
+          <i class="fa-solid fa-browser"></i>
+        </div>
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic">Investments</div>
+            <div class="number">$8,231</div>
+            <div class="indicator">
+              <i class='bx bx-up-arrow-alt'></i>
+              <span class="text">Up from starting</span>
+            </div>
+          </div>
+          <!-- <i class='bx bx-cart cart three' ></i> -->
+          <i class="fa-solid fa-browser"></i>
+        </div>
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic">Return</div>
+            <div class="number">11,086</div>
+            <div class="indicator">
+              <i class='bx bx-down-arrow-alt down'></i>
+              <span class="text">Down From Today</span>
+            </div>
+          </div>
+          <!-- <i class='bx bxs-cart-download cart four' ></i> -->
+          <i class="fa-solid fa-browser"></i>
+        </div>
+      </div>
+
+      <div class="sales-boxes">
+        <div class="recent-sales box">
+
+
+          <canvas id="lineChart"></canvas>
+
+          <div class="button">
+            <a href="#">Download</a>
+          </div>
+        </div>
+        <div class="top-sales box">
+          <div class="title">Learner'sRatings</div>
+
+          <ul class="top-sales-details">
+            <li>
+              <a href="#">
+                <img src="img/i.png" alt="">
+                <span class="product">Crystal Maiden</span>
+              </a>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+            </li>
+            <br>
+            <li>
+
+              <a href="#">
+                <img src="img/im.avif" alt="">
+                <span class="product">Katherine John </span>
+                </a>
+                <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              </li>
+              <br>
+              <li>
+                <a href="#">
+                <img src="img/si.jpg" alt="">
+                <span class="product">Christanio Shoe</span>
+                </a>
+                <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              </li>
+              <br>
+              <li>
+                <a href="#"> 
+                <img src="img/g.jpg" alt="">
+                <span class="product">Saumya Thanon</span>
+                </a>
+
+                <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              </li>
+              <li>
+                
+              </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script>
+    let sidebar = document.querySelector(".sidebar");
+    let sidebarBtn = document.querySelector(".sidebarBtn");
+    sidebarBtn.onclick = function () {
+      sidebar.classList.toggle("active");
+      if (sidebar.classList.contains("active")) {
+        sidebarBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+      } else
+        sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.8.0/dist/chart.min.js"></script>
+  <script src="chart.js"></script>
+
+</body>
+
+</html>
